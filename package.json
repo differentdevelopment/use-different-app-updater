@@ -1,6 +1,6 @@
 {
   "name": "@different-development/use-different-app-updater",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A custom hook made specifically for our applications.",
   "keywords": [
     "different"
@@ -12,7 +12,7 @@
     "url": "https://github.com/differentdevelopment/use-different-app-updater.git"
   },
   "main": "use-different-app-updater.ts",
-  "types": "index.d.ts",
+  "types": "use-different-app-updater.d.ts",
   "peerDependencies": {
     "react": ">=16.8.6",
     "react-dom": ">=16.8.6",

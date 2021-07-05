@@ -21,7 +21,6 @@ const useDifferentAppUpdater = (appName: string) => {
                     ) {
                         if (semver.valid(response.data[appName].version) && semver.gt(response.data[appName].version, version)) {
                             if (response.data[appName].forceUpdate) {
-                                //onUpdate(response.data[appName].version);
                                 setTempVersion(response.data[appName].version);
                                 setIsUpdateReady(true);
                             } else {
