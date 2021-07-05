@@ -1,34 +1,74 @@
 {
-  "name": "@different-development/use-different-app-updater",
-  "version": "1.0.3",
-  "description": "A custom hook made specifically for our applications.",
-  "keywords": [
-    "different"
-  ],
-  "author": "Different Fejlesztő Kft.",
+  "version": "0.1.0",
   "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/differentdevelopment/use-different-app-updater.git"
   },
-  "main": "use-different-app-updater.ts",
-  "types": "use-different-app-updater.d.ts",
-  "peerDependencies": {
-    "react": ">=16.8.6",
-    "react-dom": ">=16.8.6",
-    "semver": "^7.3.5",
-    "axios": "^0.21.1",
-    "clear-cache": "^1.0.1"
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
   },
+  "peerDependencies": {
+    "axios": ">=0.20",
+    "clear-cache": ">=1.0.0",
+    "react": ">=16",
+    "semver": ">=7.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "@different-development/use-different-app-updater",
+  "author": "Different Fejlesztő Kft.",
+  "module": "dist/use-different-app-updater.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/use-different-app-updater.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/use-different-app-updater.esm.js",
+      "limit": "10 KB"
+    }
+  ],
   "devDependencies": {
-    "@types/node": "^14.0.14",
-    "@types/react": "16.14.0",
-    "@types/react-dom": "^16.9.0",
+    "@size-limit/preset-small-lib": "^5.0.1",
+    "@types/react": "^17.0.13",
+    "@types/react-dom": "^17.0.8",
     "@types/semver": "^7.3.6",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "tslint-react": "^5.0.0",
-    "typescript": "^3.9.5"
+    "@types/axios": ">=0.20",
+    "axios": ">=0.20",
+    "clear-cache": ">=1.0.1",
+    "husky": "^7.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "semver": ">=7.0",
+    "size-limit": "^5.0.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
   },
   "publishConfig": {
     "access": "public"
