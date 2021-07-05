@@ -1,0 +1,36 @@
+{
+  "name": "@different-development/use-different-app-updater",
+  "version": "1.0.0",
+  "description": "A custom hook made specifically for our applications.",
+  "keywords": [
+    "different"
+  ],
+  "author": "Different Fejlesztő Kft.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/differentdevelopment/use-different-app-updater.git"
+  },
+  "main": "use-different-app-updater.ts",
+  "types": "index.d.ts",
+  "peerDependencies": {
+    "react": ">=16.8.6",
+    "react-dom": ">=16.8.6",
+    "semver": "^7.3.5",
+    "axios": "^0.21.1",
+    "clear-cache": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.14",
+    "@types/react": "16.14.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/semver": "^7.3.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "tslint-react": "^5.0.0",
+    "typescript": "^3.9.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
