@@ -3,9 +3,9 @@ import Axios from "axios";
 import semver from "semver";
 import { clearCache } from "clear-cache";
 
-const version = localStorage.getItem("APP_VER") ?? "0.0.1";
-
 const useDifferentAppUpdater = (appName: string) => {
+    const version = localStorage.getItem("APP_VER") ?? "0.0.1";
+    
     const [isUpdateReady, setIsUpdateReady] = useState<boolean>(false);
     const [tempVersion, setTempVersion] = useState<string>(version ?? "0.0.1");
 

@@ -1,6 +1,6 @@
 {
   "name": "@different-development/use-different-app-updater",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A custom hook made specifically for our applications.",
   "keywords": [
     "different"
